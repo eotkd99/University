@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="Hmain_3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Hmain_Table_P_CTL">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <TableView fx:id="tableView" layoutX="74.0" layoutY="109.0" prefHeight="239.0" prefWidth="425.0">
+              <columns>
+                <TableColumn fx:id="check" prefWidth="32.0" text="선택" />
+                <TableColumn fx:id="ProfessorNum" prefWidth="62.0" text="교번" />
+                <TableColumn fx:id="ProfessorName" prefWidth="50.0" text="이름" />
+                <TableColumn fx:id="ProfessorClass" prefWidth="124.0" text="학과" />
+                <TableColumn fx:id="ProfessorRnum" prefWidth="156.0" text="주민등록번호" />
+              </columns>
+            </TableView>
+            <TextField fx:id="inSearch" layoutX="105.0" layoutY="49.0" prefHeight="22.0" prefWidth="51.0" />
+            <Button fx:id="Hmain_3_1" layoutX="522.0" layoutY="111.0" mnemonicParsing="false" onAction="#Hmain_3_Fun1" text="등록" />
+            <Button fx:id="Hmain_3_2" layoutX="522.0" layoutY="144.0" mnemonicParsing="false" onAction="#Hmain_3_Fun2" text="수정" />
+            <Button fx:id="Hmain_3_3" layoutX="522.0" layoutY="178.0" mnemonicParsing="false" onAction="#Hmain_3_Fun3" text="삭제" />
+            <Button fx:id="Hmain_3_4" layoutX="522.0" layoutY="326.0" mnemonicParsing="false" onAction="#Hmain_3_Fun4" text="이전" />
+            <Text layoutX="20.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="교번으로 검색" />
+            <TextField fx:id="inProfessorNum" layoutX="105.0" layoutY="76.0" prefHeight="22.0" prefWidth="51.0" />
+            <TextField fx:id="inProfessorName" layoutX="160.0" layoutY="76.0" prefHeight="22.0" prefWidth="40.0" />
+            <TextField fx:id="inProfessorClass" layoutX="205.0" layoutY="76.0" prefHeight="22.0" prefWidth="133.0" />
+            <TextField fx:id="inProfessorRnum" layoutX="344.0" layoutY="76.0" prefHeight="22.0" prefWidth="133.0" />
+            <Button fx:id="Hmain_3_5" layoutX="160.0" layoutY="49.0" mnemonicParsing="false" onAction="#Hmain_3_Fun5" text="확인" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

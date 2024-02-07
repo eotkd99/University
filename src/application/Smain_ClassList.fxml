@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="Smain_3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Smain_ClassList_CTL">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <TableView fx:id="tableView" layoutX="83.0" layoutY="66.0" prefHeight="269.0" prefWidth="435.0">
+              <columns>     
+               <TableColumn fx:id="LectureNum" prefWidth="59.0" text="강좌번호" />
+               <TableColumn fx:id="LectureName" prefWidth="78.0" text="강좌이름" />
+               <TableColumn fx:id="LectureDepartment" prefWidth="108.0" text="담당학과" />
+               <TableColumn fx:id="LectureProfessor" prefWidth="68.0" text="담당교수" />
+               <TableColumn fx:id="LectureSnum" prefWidth="59.0" text="학점" />
+               <TableColumn fx:id="LectureScore" prefWidth="62.0" text="점수" />
+              </columns>
+            </TableView>
+            <Button fx:id="Smain_3_1" layoutX="279.0" layoutY="351.0" mnemonicParsing="false" onAction="#Smain_3_Fun1" prefHeight="27.0" prefWidth="43.0" text="이전" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

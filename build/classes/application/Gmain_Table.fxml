@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="Gmain_2" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Gmain_Table_CTL">
+	<children>
+		<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgrey;">
+			<children>
+				<Button fx:id="Gmain_2_1" layoutX="542.0" layoutY="75.0" mnemonicParsing="false" onAction="#Gmain_2_Fun1" text="등록" />
+				<Button fx:id="Gmain_2_2" layoutX="542.0" layoutY="104.0" mnemonicParsing="false" onAction="#Gmain_2_Fun2" text="수정" />
+				<Button fx:id="Gmain_2_3" layoutX="542.0" layoutY="135.0" mnemonicParsing="false" onAction="#Gmain_2_Fun3" text="삭제" />
+				<Button fx:id="Gmain_2_4" layoutX="542.0" layoutY="343.0" mnemonicParsing="false" onAction="#Gmain_2_Fun4" text="이전" />
+           	 <TableView fx:id="tableView" layoutX="8.0" layoutY="75.0" prefHeight="290.0" prefWidth="498.0">
+              <columns>
+               <TableColumn fx:id="check" prefWidth="33.0" text="선택" />
+               <TableColumn fx:id="LectureNum" prefWidth="53.0" text="강좌번호" />
+               <TableColumn fx:id="LectureName" prefWidth="78.0" text="강좌이름" />
+               <TableColumn fx:id="LectureDepartment" prefWidth="78.0" text="담당 학과" />
+               <TableColumn fx:id="LectureSNum" prefWidth="41.0" text="학점수" />
+               <TableColumn fx:id="LectureDes" prefWidth="47.0" text="설명" />
+                <TableColumn fx:id="LectureOPEN" prefWidth="31.0" text="개설" />
+                <TableColumn fx:id="LectureProfessor" prefWidth="65.0" text="담당교수" />
+                  <TableColumn fx:id="LectureMIN" prefWidth="34.0" text="최소" />
+                  <TableColumn fx:id="LectureMAX" prefWidth="35.0" text="최대" />
+              </columns>
+            </TableView>
+            <TextField fx:id="inLectureNum" layoutX="46.0" layoutY="49.0" prefHeight="22.0" prefWidth="48.0" />
+            <TextField fx:id="inLectureName" layoutX="101.0" layoutY="49.0" prefHeight="22.0" prefWidth="70.0" />
+            <TextField fx:id="inLectureDepartment" layoutX="179.0" layoutY="49.0" prefHeight="22.0" prefWidth="70.0" />
+            <TextField fx:id="inLectureSnum" layoutX="253.0" layoutY="49.0" prefHeight="22.0" prefWidth="40.0" />
+            <TextField fx:id="inLectureDes" layoutX="296.0" layoutY="49.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="Gmain_2_5" layoutX="101.0" layoutY="21.0" mnemonicParsing="false" onAction="#Gmain_2_Fun5" text="확인" />
+            <Text layoutX="17.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="검색" />
+            <TextField fx:id="inSearch" layoutX="46.0" layoutY="21.0" prefHeight="22.0" prefWidth="48.0" />
+            <TextField fx:id="inLectureMIN" layoutX="535.0" layoutY="226.0" prefHeight="22.0" prefWidth="55.0" />
+            <TextField fx:id="inLectureMAX" layoutX="535.0" layoutY="251.0" prefHeight="22.0" prefWidth="55.0" />
+            <Text layoutX="509.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="최소" />
+            <Text layoutX="509.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="최대" />
+            <Button fx:id="Gmain_2_6" layoutX="542.0" layoutY="280.0" mnemonicParsing="false" onAction="#Gmain_2_Fun6" text="개설" />
+            <Text layoutX="538.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="담당교수" wrappingWidth="48.0" />
+            <ComboBox fx:id="combobox" layoutX="514.0" layoutY="200.0" prefHeight="22.0" prefWidth="76.0" />
+			</children>
+		</Pane>
+	</children>
+</StackPane>

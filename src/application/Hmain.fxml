@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="Hmain_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Hmain_CTL">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Button fx:id="Hmain_1_1" layoutX="190.0" layoutY="63.0" mnemonicParsing="false" onAction="#Hmain_1_Fun1" text="학생정보관리">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="Hmain_1_2" layoutX="190.0" layoutY="136.0" mnemonicParsing="false" onAction="#Hmain_1_Fun2" text="교수정보관리">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="Hmain_1_3" layoutX="220.0" layoutY="209.0" mnemonicParsing="false" onAction="#Hmain_1_Fun3" text="암호변경">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="Hmain_1_4" layoutX="220.0" layoutY="281.0" mnemonicParsing="false" onAction="#Hmain_1_Fun4" text="로그아웃">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
